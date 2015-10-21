@@ -22,52 +22,78 @@
 
 <script type='text/javascript' src='/lib/jquery-1.11.0.min.js'></script>
 <script src="/lib/modernizr-2.5.3.min.js"></script>
+
+<style>
+/* (xs) Extra small devices (phones, less than 768px) */
+/* No media query since this is the default */
+
+header h1 {
+  text-align:center;
+  }
+header h2 {
+  color:#f58120;
+  text-align:center;
+  }
+
+section.description {
+  background-color:#f6f6f4;
+  padding-top:20px; padding-bottom: 20px;
+  border-top: 1px solid #52afdd;
+  }
+section.description img {
+  max-width: 100%;
+  border-bottom: 2px solid #f58120;
+  }
+
+section.description div.message {
+  padding-top:25px;
+  }
+
+section.whatwedo {
+  color:white;
+  background-color:#52afdd;
+  padding-top:20px; padding-bottom: 20px;
+  }
+
+section.whatwedo {
+  text-align:center;
+  }
+
+footer p.vdilogo {
+  text-align:center;
+  }
+
+footer img.vdilogo {
+  max-width:90%;
+  }
+
+/* (sm) Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+section.description div.message {
+  padding-top:0px;
+  }
+
+section.description div.container {
+  max-width:960px;
+  }
+
+} /* /@media sm */
+
+</style>
+
 </head>
 
 <body>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-<style>
-/* (xs) Extra small devices (phones, less than 768px) */
-/* No media query since this is the default */
-  
-/* (sm) Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+<header class="vogeldesign"><div class="container">
 
-} /* /@media sm */
+<h1>Target your Market &mdash; by Design</h1>
+<h2>Designing. <span class="visible-xs-inline"><br></span>Marketing. <span class="visible-xs-inline"><br></span>Solutions.</h2>
 
-
-/* (md) Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-} /* /@media md */
-
-
-/* (lg) Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-} /* /@media lg */
-
-</style>
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<header class="projectname"><div class="container">
-
-<div class="row">
-
-<div class="col-xs-6">
-1
-<!-- /column1 --></div>
-
-<div class="col-xs-6">
-2
-<!-- /column2 --></div>
-
-<!-- /row --></div>
-
-<!-- /header.projectname --></div></header>
+<!-- /header.vogeldesign --></div></header>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -76,37 +102,47 @@
 <div class="row">
 
 <div class="col-sm-6">
-1
+<img src="img/painter.jpg" alt="" style="max-width:100%"/>
 <!-- /column1 --></div>
 
-<div class="col-sm-6">
+<div class="message col-sm-6">
 
 
-<p>Vogel Design, Inc. is a full-service marketing strategy and brand management firm providing creative solutions for privately held companies.</p>
+<p><strong>Vogel Design, Inc. </strong>is a full-service marketing strategy and brand management firm providing creative solutions for privately held companies.</p>
 
-<p>We are architects of marketing. We design, build and refine brand strategies and go-to-market plansso our clients can focus on their core business. The Vogel Design team delivers cost-effective marketing alternatives, hands-on client service and tangible results.</p>
+<p>We are architects of marketing. We design, build and refine brand strategies and go-to-market plans so our clients can focus on their core business. The Vogel Design team delivers cost-effective marketing alternatives, hands-on client service and tangible results.</p>
 
 <p>We make it easy to do business with us – some of our clients leverage our talent for project specific work, other clients look to us for strategic guidance and support for total integration of all their marketing initiatives.</p>
 
 <p>Vogel Design offers an outsourced solution for small businesses who don’t have or can’t afford additional experienced marketing professionals on staff. Your work will be managed and executed by an experienced team of marketing experts who have been in business for decades.</p>
 
-<p>Contact Vogel Design at 952.401.9420 or e-mail info@vogeldesign.com to learn more.</p>
+<p>Contact Vogel Design at <strong>952.401.9420</strong> or e-mail <a href="mailto:info@vogeldesign.com">info@vogeldesign.com</a> to learn more.</p>
 
 <!-- /column2 --></div>
 
 <!-- /row --></div>
 
+</div></section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section class="whatwedo"><div class="container">
+
+<p>
+Brand Management, Go-to-Market Plans, Identity Systems & Guidelines, Copywriting & Content Generation, Website Design and Enhancement, 
+<span class="visible-lg-inline"><br></span>
+Search Engine Optimization, Digital Communications, Cross Media Campaigns, Promotional & Advertising Campaigns, Public Relations.
+</p>
 
 </div></section>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-<footer class="projectname"><div class="container">
+<footer class="vogeldesign"><div class="container">
 
-footer
-<!-- /footer.projectname --></div></footer>
+<p class="vdilogo"><img class="vdilogo" src="img/vdi-logo.jpg" alt="vogel design inc" width="500" /></p>
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- /footer.vogeldesign --></div></footer>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
