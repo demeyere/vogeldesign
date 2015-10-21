@@ -1,0 +1,602 @@
+/*   
+Theme Name: demeyere.com
+Theme URI: http://demeyere.com/
+Description: demeyere.com
+Author: Ross DeMeyere
+Author URI: http://demeyere.com/
+Version: 2015-04-19 17:53 
+*/
+
+
+/* reference items ========================================================= */
+
+.RBNo21a-Bold { font-family: RBNo21a-Bold; }
+.inconsolata  { font-family: "inconsolata"; }
+.ff-more      { font-family: "ff-more-web-pro",serif; }
+
+
+/* demeyere™ colour pallette =============================================== */
+.black       { color:#000000; }
+.black-bg    { background-color:#000000; }
+.white       { color:#ffffff; }
+.white a     { color:#ffffff; }
+.lime        { color:#8bb805; }
+.lime-040    { color:#d0e29B; }
+.lime-bg     { background-color:#8bb805; }
+.orange      { color:#f37526; }
+.concrete    { color:#949d9e; }
+.highlighter { background-color:#ffffaa; }
+
+.black-bg,
+.lime-bg     { color:#ffffff; }
+
+/* general style */
+
+img { max-width:100%; }
+iframe { max-width:100%; }
+
+
+/* header section ========================================================== */
+
+header.demeyere {
+  background-color: #8bb805; /* lime */
+  }
+header.demeyere div.container {
+  padding-top: 13px;
+  padding-bottom: 3px;
+  }
+header.demeyere div.logotype { 
+  }
+header.demeyere h1 {
+  display: none; 
+  }
+header.demeyere .logotype a img {
+  height: auto;
+  border: none;
+  }
+header.demeyere nav {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  }
+
+@media (min-width: 768px) { /* (sm) Small devices (tablets, 768px and up) */
+
+header.demeyere nav {
+  height: 53px;
+  line-height: 53px;
+  text-align: right;
+  padding-bottom: 0;
+  }
+
+} /* /@media sm */
+
+header.demeyere nav a, header.demeyere nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  }
+header.demeyere nav a:hover, header.demeyere nav a:active {
+  color: #ffffff;
+  text-decoration: underline;
+  }
+
+
+/* blurb section =========================================================== */
+
+body.postname-preview section.blurb {display:none;}
+
+section.blurb p {
+  color: #d0e29B; /* lime-040 */
+  font-family: RBNo21a-Bold;
+  font-weight: normal; font-style:normal;
+  font-size:40px; line-height:35px; 
+  text-indent: -15px;  
+  margin:0; padding:20px; 
+  border-bottom:1px solid #cccccc; 
+  }
+
+@media (min-width: 768px) { /* (sm) Small devices (tablets, 768px and up) */
+
+section.blurb p {
+  font-size:70px; line-height:70px; 
+  text-indent: -24px;  
+  }
+
+} /* /@media sm */
+
+body.postname-contact section.blurb p {border-bottom:0;} /* shut off unnessesary border */
+
+section.blurb p a {
+  color: #dddddd;
+  }
+
+
+
+/* call-to-action section =========================================================== */
+
+section.callme {
+  color: white;
+  background-color:#8bb805;
+  font-family: RBNo21a-Bold;
+  font-weight: normal; font-style:normal;
+  font-size: 30px; line-height: 30px;
+  text-align: center;
+  padding: 9px 0 9px 0;
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+
+@media (min-width: 768px) { /* (sm) Small devices (tablets, 768px and up) */
+
+section.callme {
+  font-size: 40px; line-height: 40px;
+  }
+
+} /* /@media sm */
+
+section.callme a {
+  color: #dddddd;
+  }
+
+
+
+/* content-area section ==================================================== */
+
+section.content-area {
+  padding:20px 0; 
+  }
+
+
+/* footer section ========================================================== */
+
+footer.demeyere {
+  background-color: #8bb805; 
+  }
+footer.demeyere div.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+footer.demeyere p {
+  color: #ffffff;
+  font-size: 12px; line-height: 14px; 
+  font-weight: bold;
+  }
+footer.demeyere p.tagline {
+  font-family: "ff-more-web-pro",serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px; line-height: 16px; 
+  font-style: italic;
+  }
+footer.demeyere a, footer.demeyere a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  }
+footer.demeyere a:hover, footer.demeyere a:active {
+  color: #ffffff;
+  text-decoration: underline;
+  }
+
+
+/* article specific ======================================================== */
+
+/* add space and a rule between articles */
+article {
+  padding-bottom:31px;
+  border-bottom:1px solid #ddddcc;
+  margin-bottom:31px;
+  }
+
+/* remove the rule between articles when there is only one article on the page */
+body.page article, 
+body.single article {
+  padding-bottom:0;
+  border-bottom:0;
+  }
+
+/* add it back on the journal page `is_single` but used as `ls` */
+body.postname-journal article {
+  padding-bottom:31px;
+  border-bottom:1px solid #ddddcc;
+  }
+
+h1 {
+  font-family: RBNo21a-Bold;
+  font-weight: normal;
+  font-size:36px; line-height:36px; 
+  color:#8bb805;
+  margin-top:0px;
+  margin-bottom:18px;
+  }
+
+iframe + h1, 
+p + h1,
+img + h1,
+a + h1,
+blockquote + h1 {
+  margin-top:18px;
+  }
+
+h2 {
+  font-weight:bold;
+  color:#545454;
+  font-size:18px; line-height:18px; 
+  margin-top:18px; margin-bottom:18px;
+  }
+  
+h3 { 
+  margin-top:18px; margin-bottom:9px;
+  color:#777777;
+  font-size:14px; line-height:18px;
+  font-weight:bold; font-style:italic;
+  }
+
+h4, h5, h6 { 
+  font-size:12px; line-height:18px;
+  font-weight:bold;
+  color:#777777;
+  margin-bottom:9px; margin-top:18px;
+  }
+
+mark {
+  color:inherit;
+  background-color:#ffffaa; /* highlighter */
+  }
+
+blockquote {
+  color:#949d9e;
+  }
+
+p.byline {
+  line-height: 25px;
+  }
+
+p.byline .btn-primary {
+    background-color: #8bb805;
+    border-color: #8bb805;
+    color: #ffffff;
+}
+span.category .btn-primary {
+    background-color: #f37526;
+    border-color: #f37526;
+    color: #ffffff;
+}
+span.tags .btn-primary {
+    background-color: #949d9e;
+    border-color: #949d9e;
+    color: #ffffff;
+}
+
+
+/* article feature-imagery-block ============================================= */
+
+.feature-imagery-block         { margin:0 -4px 0 -2px; padding:0; }
+.feature-imagery-block    img  { float:left; padding:0 2px 4px; }
+.feature-imagery-block-1  img  { width:100%;                }
+.feature-imagery-block-2  img  { width: 50%;                }
+.feature-imagery-block-3  img  { width: 33.3333333333333%;  }
+.feature-imagery-block-4  img  { width: 25%;                }
+.feature-imagery-block-5  img  { width: 20%;                }
+.feature-imagery-block-6  img  { width: 16.6666666666666%;  }
+.feature-imagery-block-7  img  { width: 14.2857142857%;     }
+.feature-imagery-block-8  img  { width: 12.5%;              }
+.feature-imagery-block-9  img  { width: 11.1111111111111%;  }
+.feature-imagery-block-10 img  { width: 10%;                }
+.feature-imagery-block-11 img  { width:  9.09090909090909%; }
+.feature-imagery-block-12 img  { width:  8.33333333333333%; }
+.feature-imagery-block + h1    { margin-top:16px; }
+
+
+
+/* code and textarea specific ============================================== */
+
+code,tt,kbd,dfn,samp,textarea {
+  font-family: Consolas, 'inconsolata', "Lucida Console", Monaco, courier, monospace; 
+  font-style:normal; 
+  font-weight:normal;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  color: #333333;
+  }
+pre code {
+  border:0;
+  }
+textarea {
+  width:95%; height:250px;
+  font-size:12px;
+  border:1px solid #bbbbbb;
+  margin-bottom:10px;
+  }
+
+
+/*  lists  ================================================================= */
+
+ul li { list-style-type:square; }
+ol li { list-style-type:decimal; }
+
+
+/* quotes ================================================================== */
+
+/* articles that are tagged as quotes should not display the headline or the byline */
+article.tag-quote h2 {display:none;}
+article.tag-quote p.byline {display:none;}
+article.tag-quote p >img {padding-left:12px;}
+article.tag-quote p {
+  font-family: "ff-more-web-pro",serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size:24px;
+  color:#cccccc;
+  text-indent:-12px;
+  }
+
+
+/* display lists =========================================================== */
+
+dd { margin-left:18px; }
+
+
+/* QR code specific ======================================================== */
+
+img.qrcode {margin:0px 30px 30px 0px;}
+
+
+/* Adjacent `blockquote` or `pre` fix ====================================== */
+/* Use `- - -` after a `blockquote` or `pre` in the markdown to prevent it 
+   from merging with an adjacent `blockquote` or `pre`. */
+
+pre + hr,
+blockquote + hr {
+  display:none;
+  }
+
+
+/* Print style negation ==================================================== */
+
+div.page-break { display:none; }
+.print-only    { display:none; }
+
+
+/* rss sidebar styles ====================================================== */
+
+#sidebar div.article { 
+  margin:0 0 10px 0; padding:0;
+  border:0; border-top:1px solid #bbbbbb;
+  clear:both;
+  }
+
+#sidebar div.article h4 {
+  font-family:helvetica;
+  font-weight:normal;
+  font-size:12px; line-height:18px;
+  color:#777777;
+  margin:0; padding:2px 0;
+  clear:both;
+  }
+#sidebar div.article h4 a {
+  color:#777777;
+  text-decoration:none;
+  }
+
+#sidebar div.article p {
+  font-family:helvetica;
+  font-size:12px; line-height:18px;
+  color:#777777;
+  margin:0; padding:2px 0;
+  clear:both;
+  }
+#sidebar div.article p a {
+  font-weight:bold;
+  color:#777777;
+  text-decoration:none;
+  }
+
+#sidebar div.article.flickr h4 {
+  font-weight:bold;
+  padding-left:80px;
+  clear:none;
+  }
+#sidebar div.article.flickr p {
+  padding-left:80px;
+  clear:none;
+  }
+#sidebar div.article.flickr p.credit {
+  font-style:italic;
+  color:#aaaaaa;
+  padding-left:80px;
+  }
+#sidebar div.article.flickr img {
+  float:left;
+  padding:5px 5px 5px 0;
+  border:0;
+  }
+#sidebar div.article.flickr a {
+  outline-width:0;
+  }
+
+#sidebar div.article.demx p {
+  font-weight:normal;
+  color:#aaaaaa;
+  }
+#sidebar div.article.demx img {
+  float:left;
+  margin:5px 7px 0px 0;
+  max-width:80px;
+  }
+
+
+/* military-grade CSS ====================================================== */
+
+*.redacted       { color:#000000; background-color:#000000; }
+*.redacted:hover { color:#333333; background-color:#777777; }
+
+
+/* emotional CSS =========================================================== */
+
+*.shout   { text-transform:uppercase; }
+*.whisper { text-transform:lowercase; color:#94909e; }
+
+
+/* blockquote styles FIXME ================================================= */
+
+blockquote.note       { border-color:#77aa77; background-color:#ddffdd; }
+blockquote.warning    { border-color:#ff3333; background-color:#ffcccc; }
+blockquote.deprecated { border-color:#dddd66; background-color:#ffffcc; }
+
+
+/* construction color theme ================================================ */
+
+body.construction header.demeyere,
+body.construction footer.demeyere   { background-color:#d3a148; }
+body.construction article h1        { color:#d3a148; }
+body.construction section.blurb p   { color:#edd9b6; }
+body.construction section.blurb p a { color:#edd9b6; }
+
+
+/* gravity forms overrides ================================================= */
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+  width: 98% !important;
+  }
+
+article .gform_wrapper div.validation_error {  /* make this look like class="alert alert-warning" */
+  font-size: inherit;
+  font-weight:bold;
+  color: #790000; 
+  background-color:#ffdfe0;
+  border-color: #c89797;
+  border-radius:4px;
+  padding:15px;
+  margin-bottom:20px;
+  }
+  
+
+/* `ls` overrides ========================================================== */
+
+.postname-ls article {
+  margin:0; padding:0;
+  }
+.postname-ls time {
+  display:none
+  }
+.postname-ls article p.byline {
+  overflow:hidden;
+  height:25px; 
+  line-height:25px;
+  margin:0; padding:0;
+  }
+
+
+/* social media section ==================================================== */
+
+section.socialmedia {
+  text-align:center;
+  padding:20px 0;
+  border-top:1px solid #eeeeee;
+  }
+a.social-font {
+  font-size:42px; 
+  color:#cccccc;
+  text-decoration:none;
+  margin:0 4px;
+  vertical-align:middle;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  }
+a:hover.social-font {
+  color:#8cb624;
+  }
+
+
+/* glyphicons ============================================================== */
+
+@font-face {
+  font-family: 'Glyphicons Social Regular';
+  src: url('glyphicons/glyphicons-social-regular.eot');
+  src: url('glyphicons/glyphicons-social-regular.eot?#iefix') format('embedded-opentype'), url('glyphicons/glyphicons-social-regular.woff') format('woff'), url('glyphicons/glyphicons-social-regular.ttf') format('truetype'), url('glyphicons/glyphicons-social-regular.svg#glyphicons_socialregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+.social-font {
+  font-family: 'Glyphicons Social Regular';
+  font-style: normal;
+  font-weight: normal;
+  }
+
+/* map section for contact page ============================================ */
+section.map {
+  border-top:    1px solid #777777;
+  border-bottom: 1px solid #777777;
+  height: 202px;
+  }
+
+
+/* swedish overrides ======================================================= */
+
+.postname-sv header.demeyere { background-color:#FEC920; }
+.postname-sv section.blurb   { background-color:#006da6 }
+.postname-sv section.blurb p { color: #FEC920; }
+.postname-sv article h1      { color: #FEC920; }
+.postname-sv footer.demeyere { background-color: #006DA6; }
+
+
+/* div.loading-placeholder ================================================= */
+     div.loading-placeholder div.svg   { display:none; }
+.svg div.loading-placeholder div.nosvg { display:none; }
+.svg div.loading-placeholder div.svg   { display:block; }
+
+
+/* METAR =================================================================== */
+.metar {
+  background-color:#f5f5f5;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding:3px 7px;
+  font-size:14px; line-height:14px;
+  font-family: "inconsolata"; 
+  }
+.metar + .metar {
+  border-top:0;
+  }
+
+@media (min-width: 400px) { /* (sm) Small devices (tablets, 768px and up) */
+
+.metar {
+  font-size:12px; line-height:12px;
+  }
+
+} /* /@media sm */
+
+
+/* buttonry colours ========================================================= */
+
+.btn-demeyere {
+  background-color: #8bb805;
+  border-color: #8bb805;
+  color: #ffffff;
+  }
+
+/* override pagination colors with demeyere.lime ============================ */
+.pagination > li > a,
+.pagination > li > span {
+  color: #8bb805;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #8bb805;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  color: #ffffff;
+  background-color: #8bb805;
+  border-color: #8bb805;
+}

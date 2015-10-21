@@ -1,0 +1,49 @@
+
+body {
+  background-color: #fff;
+  }
+
+/* I don't want to print a few of the sections ============================= */
+
+header,
+footer,
+p.byline,
+section.blurb,
+section.socialmedia,
+#sidebar {
+  display:none;
+  }
+
+/* stretch the content column to full width ================================ */
+
+.col-md-8 {
+  width:100%;
+  }
+
+/* page break and link stuff =============================================== */
+
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+  }
+
+a:link:after,
+a:visited:after {
+  color:#888; 
+  content: " (" attr(href) ")"; 
+  text-decoration:none;
+  }
+
+a:link[href^="/"]:after {
+  content: " (http://demeyere.com" attr(href) ")";
+  }
+
+div.page-break {
+  display:block;
+  page-break-before: always;
+  }
+
+.print-only {
+  display:block;
+  }
